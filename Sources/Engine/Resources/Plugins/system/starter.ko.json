@@ -1,0 +1,273 @@
+{
+ "panels": [
+  {
+   "items": [
+    {
+     "fn": "Lightroom Classic",
+     "label": "Lightroom Classic",
+     "open": "com.adobe.LightroomClassicCC7"
+    },
+    {
+     "fn": "Photoshop",
+     "label": "Photoshop",
+     "open": "com.adobe.Photoshop"
+    },
+    {
+     "fn": "DaVinci Resolve",
+     "label": "DaVinci Resolve",
+     "open": "com.blackmagic-design.DaVinciResolve"
+    },
+    {
+     "fn": "Capture One",
+     "label": "Capture One",
+     "open": "com.captureone.captureone16"
+    }
+   ],
+   "name": "앱 실행"
+  }
+ ],
+ "profiles": [
+  {
+   "app": "",
+   "assignments": {
+    "v:0B170001": {
+     "app": "",
+     "preset": "",
+     "settings": {
+      "name": "스크롤",
+      "tiltMode": 1,
+      "tiltSensitivity": 3,
+      "tiltX": {
+       "scroll": "horizontal",
+       "step": 20
+      },
+      "tiltY": {
+       "scroll": "vertical",
+       "step": -20
+      },
+      "turn": {
+       "scroll": "vertical",
+       "step": 20
+      },
+      "turnSensitivity": 9
+     }
+    },
+    "v:B0770001::button1": {
+     "app": "",
+     "preset": "",
+     "settings": {
+      "doublePress": {
+       "input": "audio_next"
+      },
+      "name": "재생 ↔ 정지 · 두 번 누르면 다음 곡",
+      "press": {
+       "input": "audio_play"
+      }
+     }
+    },
+    "v:B0770001::button2": {
+     "app": "",
+     "preset": "",
+     "settings": {
+      "name": "화면 캡처 · 길게 누르면 캡처 도구",
+      "press": {
+       "key": "4",
+       "modifiers": [
+        "command",
+        "shift"
+       ]
+      },
+      "pressAndHold": {
+       "key": "5",
+       "modifiers": [
+        "command",
+        "shift"
+       ]
+      }
+     }
+    },
+    "v:B0770001::button3": {
+     "app": "",
+     "preset": "",
+     "settings": {
+      "name": "Spotlight · 길게 누르면 앱 실행 목록",
+      "press": {
+       "key": "space",
+       "modifiers": [
+        "command"
+       ]
+      },
+      "pressAndHold": {
+       "panel": "list:앱 실행"
+      }
+     }
+    },
+    "v:D1A10001::dial1": {
+     "app": "",
+     "preset": "",
+     "settings": {
+      "deco": "volume",
+      "name": "음량 · 누르면 음소거",
+      "press": {
+       "input": "audio_mute"
+      },
+      "turn": {
+       "input": "system.volume",
+       "step": 2
+      }
+     }
+    },
+    "v:D1A10001::dial2": {
+     "app": "",
+     "preset": "",
+     "settings": {
+      "name": "화면 밝기",
+      "sensitivity": 5,
+      "turn": {
+       "input": "system.brightness",
+       "step": 1
+      }
+     }
+    },
+    "v:D1A10001::dial3": {
+     "app": "",
+     "preset": "",
+     "settings": {
+      "leftTurn": {
+       "key": "-",
+       "modifiers": [
+        "command"
+       ]
+      },
+      "name": "확대 ↔ 축소 · 누르면 실제 크기",
+      "press": {
+       "key": "0",
+       "modifiers": [
+        "command"
+       ]
+      },
+      "rightTurn": {
+       "key": "=",
+       "modifiers": [
+        "command"
+       ]
+      },
+      "sensitivity": 5
+     }
+    },
+    "v:D1A10002::dial1": {
+     "app": "",
+     "preset": "",
+     "settings": {
+      "leftTurn": {
+       "key": "z",
+       "modifiers": [
+        "command"
+       ]
+      },
+      "name": "실행 취소 ↔ 다시 실행",
+      "rightTurn": {
+       "key": "z",
+       "modifiers": [
+        "command",
+        "shift"
+       ]
+      },
+      "sensitivity": 4
+     }
+    },
+    "v:D1A10002::dial2": {
+     "app": "",
+     "preset": "",
+     "settings": {
+      "leftTurn": {
+       "key": "tab",
+       "modifiers": [
+        "control",
+        "shift"
+       ]
+      },
+      "name": "탭 넘기기",
+      "rightTurn": {
+       "key": "tab",
+       "modifiers": [
+        "control"
+       ]
+      },
+      "sensitivity": 4
+     }
+    },
+    "v:D1A10002::dial3": {
+     "app": "",
+     "preset": "",
+     "settings": {
+      "leftTurn": {
+       "key": "left",
+       "modifiers": [
+        "control"
+       ]
+      },
+      "name": "데스크탑 넘기기 · 누르면 Mission Control",
+      "press": {
+       "key": "up",
+       "modifiers": [
+        "control"
+       ]
+      },
+      "rightTurn": {
+       "key": "right",
+       "modifiers": [
+        "control"
+       ]
+      },
+      "sensitivity": 3
+     }
+    }
+   },
+   "id": "5a17e7000000000000001",
+   "lastActivated": 999,
+   "layout": {
+    "modules": [
+     {
+      "r": 0,
+      "t": 25,
+      "u": "?-L6z",
+      "x": 0,
+      "y": 0
+     },
+     {
+      "r": 1,
+      "t": 8,
+      "u": "v:B0770001",
+      "x": 2,
+      "y": 0
+     },
+     {
+      "r": 2,
+      "t": 24,
+      "u": "v:0B170001",
+      "x": 2,
+      "y": 1
+     },
+     {
+      "r": 3,
+      "t": 9,
+      "u": "v:D1A10001",
+      "x": 0,
+      "y": 1
+     },
+     {
+      "r": 3,
+      "t": 9,
+      "u": "v:D1A10002",
+      "x": 0,
+      "y": 2
+     }
+    ],
+    "v": 2
+   },
+   "tags": [],
+   "title": "기본"
+  }
+ ]
+}

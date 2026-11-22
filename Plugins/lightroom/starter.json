@@ -1,0 +1,633 @@
+{
+ "profiles": [
+  {
+   "app": "com.adobe.lightroom",
+   "assignments": {
+    "v:0B170001": {
+     "app": "",
+     "preset": "",
+     "settings": {
+      "name": "Previous ↔ next photo",
+      "turn": {
+       "input": "selectphoto",
+       "step": 1
+      },
+      "turnSensitivity": 5
+     }
+    },
+    "v:B0770001::button1": {
+     "app": "",
+     "preset": "",
+     "settings": {
+      "color": "#ffffff",
+      "name": "Pick",
+      "press": {
+       "input": "flag = pick"
+      }
+     }
+    },
+    "v:B0770001::button2": {
+     "app": "",
+     "preset": "",
+     "settings": {
+      "color": "#ff3b30",
+      "name": "Reject",
+      "press": {
+       "input": "flag = reject"
+      }
+     }
+    },
+    "v:B0770001::button3": {
+     "app": "",
+     "preset": "",
+     "settings": {
+      "color": "#555555",
+      "name": "Unflag",
+      "press": {
+       "input": "flag = unflag"
+      }
+     }
+    },
+    "v:D1A10001::dial1": {
+     "app": "",
+     "preset": "",
+     "settings": {
+      "name": "Rating · press to clear",
+      "press": {
+       "input": "togglerating = 0"
+      },
+      "sensitivity": 4,
+      "turn": {
+       "input": "togglerating",
+       "step": 1
+      }
+     }
+    },
+    "v:D1A10001::dial2": {
+     "app": "",
+     "preset": "",
+     "settings": {
+      "name": "Color label · press to clear",
+      "press": {
+       "input": "labels = clear"
+      },
+      "sensitivity": 4,
+      "turn": {
+       "input": "labels",
+       "step": 1
+      }
+     }
+    },
+    "v:D1A10001::dial3": {
+     "app": "",
+     "preset": "",
+     "settings": {
+      "doublePress": {
+       "input": "switchview = compare"
+      },
+      "leftTurn": {
+       "input": "switchview = grid"
+      },
+      "name": "Grid ↔ Loupe · press to zoom",
+      "press": {
+       "input": "togglezoom"
+      },
+      "rightTurn": {
+       "input": "switchview = loupe"
+      },
+      "sensitivity": 3
+     }
+    },
+    "v:D1A10002::dial1": {
+     "app": "",
+     "preset": "",
+     "settings": {
+      "leftTurn": {
+       "input": "undo"
+      },
+      "name": "Undo ↔ redo",
+      "rightTurn": {
+       "input": "redo"
+      },
+      "sensitivity": 4
+     }
+    },
+    "v:D1A10002::dial2": {
+     "app": "",
+     "preset": "",
+     "settings": {
+      "color": "#34c759",
+      "doublePress": {
+       "input": "flag = reject_next"
+      },
+      "name": "Pick and next · double press to reject and next",
+      "press": {
+       "input": "flag = pick_next"
+      }
+     }
+    },
+    "v:D1A10002::dial3": {
+     "app": "",
+     "preset": "",
+     "settings": {
+      "name": "To Develop",
+      "press": {
+       "key": "d",
+       "modifiers": []
+      }
+     }
+    },
+    "v:D1A10011::dial1": {
+     "app": "",
+     "preset": "",
+     "settings": {
+      "name": "Rating · press to clear",
+      "press": {
+       "input": "togglerating = 0"
+      },
+      "sensitivity": 4,
+      "turn": {
+       "input": "togglerating",
+       "step": 1
+      }
+     }
+    },
+    "v:D1A10011::dial2": {
+     "app": "",
+     "preset": "",
+     "settings": {
+      "name": "Color label · press to clear",
+      "press": {
+       "input": "labels = clear"
+      },
+      "sensitivity": 4,
+      "turn": {
+       "input": "labels",
+       "step": 1
+      }
+     }
+    },
+    "v:D1A10011::dial3": {
+     "app": "",
+     "preset": "",
+     "settings": {
+      "doublePress": {
+       "input": "switchview = compare"
+      },
+      "leftTurn": {
+       "input": "switchview = grid"
+      },
+      "name": "Grid ↔ Loupe · press to zoom",
+      "press": {
+       "input": "togglezoom"
+      },
+      "rightTurn": {
+       "input": "switchview = loupe"
+      },
+      "sensitivity": 3
+     }
+    },
+    "v:D1A10012::dial1": {
+     "app": "",
+     "preset": "",
+     "settings": {
+      "name": "Rating · press to clear",
+      "press": {
+       "input": "togglerating = 0"
+      },
+      "sensitivity": 4,
+      "turn": {
+       "input": "togglerating",
+       "step": 1
+      }
+     }
+    },
+    "v:D1A10012::dial2": {
+     "app": "",
+     "preset": "",
+     "settings": {
+      "name": "Color label · press to clear",
+      "press": {
+       "input": "labels = clear"
+      },
+      "sensitivity": 4,
+      "turn": {
+       "input": "labels",
+       "step": 1
+      }
+     }
+    },
+    "v:D1A10012::dial3": {
+     "app": "",
+     "preset": "",
+     "settings": {
+      "doublePress": {
+       "input": "switchview = compare"
+      },
+      "leftTurn": {
+       "input": "switchview = grid"
+      },
+      "name": "Grid ↔ Loupe · press to zoom",
+      "press": {
+       "input": "togglezoom"
+      },
+      "rightTurn": {
+       "input": "switchview = loupe"
+      },
+      "sensitivity": 3
+     }
+    }
+   },
+   "id": "5a17e7000000000000002",
+   "lastActivated": 998,
+   "layout": {
+    "modules": [
+     {
+      "r": 0,
+      "t": 25,
+      "u": "?-L6z",
+      "x": 0,
+      "y": 0
+     },
+     {
+      "r": 1,
+      "t": 8,
+      "u": "v:B0770001",
+      "x": 2,
+      "y": 0
+     },
+     {
+      "r": 2,
+      "t": 24,
+      "u": "v:0B170001",
+      "x": 2,
+      "y": 1
+     },
+     {
+      "r": 3,
+      "t": 9,
+      "u": "v:D1A10001",
+      "x": 0,
+      "y": 1
+     },
+     {
+      "r": 3,
+      "t": 9,
+      "u": "v:D1A10002",
+      "x": 0,
+      "y": 2
+     }
+    ],
+    "v": 2
+   },
+   "moduleNames": {
+    "v:D1A10001": "Develop dials (3 layers)"
+   },
+   "screen": "library",
+   "stacks": {
+    "v:D1A10001": {
+     "index": 0,
+     "members": [
+      "v:D1A10001",
+      "v:D1A10011",
+      "v:D1A10012"
+     ],
+     "names": {
+      "v:D1A10001": "Tone",
+      "v:D1A10011": "Texture",
+      "v:D1A10012": "Color"
+     }
+    }
+   },
+   "tags": [],
+   "title": "Library"
+  },
+  {
+   "app": "com.adobe.lightroom",
+   "assignments": {
+    "v:0B170001": {
+     "app": "",
+     "preset": "",
+     "settings": {
+      "name": "Global color (tilt) · photos (turn)",
+      "nudgeSpeedMs": 15,
+      "tiltMode": 2,
+      "tiltSensitivity": 5,
+      "tiltX": {
+       "input": "GlobalWheelX"
+      },
+      "tiltY": {
+       "input": "GlobalWheelY"
+      },
+      "turn": {
+       "input": "selectphoto",
+       "step": 1
+      },
+      "turnSensitivity": 5
+     }
+    },
+    "v:B0770001::button1": {
+     "app": "",
+     "preset": "",
+     "settings": {
+      "name": "Next layer (Tone › Texture › Color)",
+      "press": {
+       "dispatch": {
+        "type": "STACK_NEXT:v:D1A10001"
+       }
+      }
+     }
+    },
+    "v:B0770001::button2": {
+     "app": "",
+     "preset": "",
+     "settings": {
+      "doublePress": {
+       "input": "WhiteBalance = Auto"
+      },
+      "name": "Before/after · double press for auto WB · hold to copy settings",
+      "press": {
+       "key": "\\",
+       "modifiers": []
+      },
+      "pressAndHold": {
+       "send": "settings = copy"
+      }
+     }
+    },
+    "v:B0770001::button3": {
+     "app": "",
+     "preset": "",
+     "settings": {
+      "doublePress": {
+       "input": "redo"
+      },
+      "name": "Undo · double press to redo · hold to paste settings",
+      "press": {
+       "input": "undo"
+      },
+      "pressAndHold": {
+       "send": "settings = paste"
+      }
+     }
+    },
+    "v:D1A10001::dial1": {
+     "app": "",
+     "preset": "",
+     "settings": {
+      "deco": "contrast",
+      "doublePress": {
+       "action": "reset",
+       "input": "Contrast"
+      },
+      "name": "Contrast",
+      "turn": {
+       "input": "Contrast",
+       "step": 1
+      }
+     }
+    },
+    "v:D1A10001::dial2": {
+     "app": "",
+     "preset": "",
+     "settings": {
+      "deco": "highlight",
+      "doublePress": {
+       "action": "reset",
+       "input": "Highlights"
+      },
+      "name": "Highlights · press and turn for Whites",
+      "pressAndTurn": {
+       "input": "Whites",
+       "step": 1
+      },
+      "turn": {
+       "input": "Highlights",
+       "step": 1
+      }
+     }
+    },
+    "v:D1A10001::dial3": {
+     "app": "",
+     "preset": "",
+     "settings": {
+      "deco": "shadow",
+      "doublePress": {
+       "action": "reset",
+       "input": "Shadows"
+      },
+      "name": "Shadows · press and turn for Blacks",
+      "pressAndTurn": {
+       "input": "Blacks",
+       "step": 1
+      },
+      "turn": {
+       "input": "Shadows",
+       "step": 1
+      }
+     }
+    },
+    "v:D1A10002::dial1": {
+     "app": "",
+     "preset": "",
+     "settings": {
+      "deco": "temp",
+      "doublePress": {
+       "input": "Temperature = reset"
+      },
+      "name": "Temperature",
+      "turn": {
+       "input": "Temperature",
+       "step": 100
+      }
+     }
+    },
+    "v:D1A10002::dial2": {
+     "app": "",
+     "preset": "",
+     "settings": {
+      "deco": "tint",
+      "doublePress": {
+       "input": "Tint = reset"
+      },
+      "name": "Tint",
+      "turn": {
+       "input": "Tint",
+       "step": 1
+      }
+     }
+    },
+    "v:D1A10002::dial3": {
+     "app": "",
+     "preset": "",
+     "settings": {
+      "deco": "exposure",
+      "doublePress": {
+       "input": "Exposure = reset"
+      },
+      "name": "Exposure",
+      "turn": {
+       "input": "Exposure",
+       "step": 0.05
+      }
+     }
+    },
+    "v:D1A10011::dial1": {
+     "app": "",
+     "preset": "",
+     "settings": {
+      "doublePress": {
+       "action": "reset",
+       "input": "Texture"
+      },
+      "name": "Texture",
+      "turn": {
+       "input": "Texture",
+       "step": 1
+      }
+     }
+    },
+    "v:D1A10011::dial2": {
+     "app": "",
+     "preset": "",
+     "settings": {
+      "deco": "clarity",
+      "doublePress": {
+       "action": "reset",
+       "input": "Clarity"
+      },
+      "name": "Clarity",
+      "turn": {
+       "input": "Clarity",
+       "step": 1
+      }
+     }
+    },
+    "v:D1A10011::dial3": {
+     "app": "",
+     "preset": "",
+     "settings": {
+      "doublePress": {
+       "action": "reset",
+       "input": "Dehaze"
+      },
+      "name": "Dehaze",
+      "turn": {
+       "input": "Dehaze",
+       "step": 1
+      }
+     }
+    },
+    "v:D1A10012::dial1": {
+     "app": "",
+     "preset": "",
+     "settings": {
+      "doublePress": {
+       "action": "reset",
+       "input": "Vibrance"
+      },
+      "name": "Vibrance",
+      "turn": {
+       "input": "Vibrance",
+       "step": 1
+      }
+     }
+    },
+    "v:D1A10012::dial2": {
+     "app": "",
+     "preset": "",
+     "settings": {
+      "deco": "saturation",
+      "doublePress": {
+       "action": "reset",
+       "input": "Saturation"
+      },
+      "name": "Saturation",
+      "turn": {
+       "input": "Saturation",
+       "step": 1
+      }
+     }
+    },
+    "v:D1A10012::dial3": {
+     "app": "",
+     "preset": "",
+     "settings": {
+      "doublePress": {
+       "action": "reset",
+       "input": "PostCropVignetteAmount"
+      },
+      "name": "Vignette",
+      "turn": {
+       "input": "PostCropVignetteAmount",
+       "step": 1
+      }
+     }
+    }
+   },
+   "id": "5a17e7000000000000003",
+   "lastActivated": 997,
+   "layout": {
+    "modules": [
+     {
+      "r": 0,
+      "t": 25,
+      "u": "?-L6z",
+      "x": 0,
+      "y": 0
+     },
+     {
+      "r": 1,
+      "t": 8,
+      "u": "v:B0770001",
+      "x": 2,
+      "y": 0
+     },
+     {
+      "r": 2,
+      "t": 24,
+      "u": "v:0B170001",
+      "x": 2,
+      "y": 1
+     },
+     {
+      "r": 3,
+      "t": 9,
+      "u": "v:D1A10001",
+      "x": 0,
+      "y": 1
+     },
+     {
+      "r": 3,
+      "t": 9,
+      "u": "v:D1A10002",
+      "x": 0,
+      "y": 2
+     }
+    ],
+    "v": 2
+   },
+   "moduleNames": {
+    "v:D1A10001": "Develop dials (3 layers)"
+   },
+   "screen": "develop",
+   "stacks": {
+    "v:D1A10001": {
+     "index": 0,
+     "members": [
+      "v:D1A10001",
+      "v:D1A10011",
+      "v:D1A10012"
+     ],
+     "names": {
+      "v:D1A10001": "Tone",
+      "v:D1A10011": "Texture",
+      "v:D1A10012": "Color"
+     }
+    }
+   },
+   "tags": [],
+   "title": "Develop"
+  }
+ ]
+}

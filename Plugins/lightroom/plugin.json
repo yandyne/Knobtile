@@ -1,0 +1,63 @@
+{
+  "spec": 1,
+  "id": "com.adobe.lightroom",
+  "name": "Lightroom Classic",
+  "apps": [
+    "com.adobe.LightroomClassicCC7",
+    "com.adobe.Lightroom6"
+  ],
+  "connect": {
+    "type": "tcp",
+    "port": 50120,
+    "valuesPort": 50121
+  },
+  "screens": [
+    {
+      "key": "library",
+      "name": "Library",
+      "recommended": [
+        "Photo.Flag.Toggle Pick",
+        "Photo.Flag.Toggle Reject",
+        "Photo.Flag.Toggle Pick & Go Next",
+        "Photo.Rating.Set Rating",
+        "Photo.Rating.Increase Star Rating",
+        "Photo.Rating.Remove Stars"
+      ]
+    },
+    {
+      "key": "develop",
+      "name": "Develop"
+    },
+    {
+      "key": "map",
+      "name": "Map"
+    },
+    {
+      "key": "book",
+      "name": "Book"
+    },
+    {
+      "key": "slideshow",
+      "name": "Slideshow"
+    },
+    {
+      "key": "print",
+      "name": "Print"
+    },
+    {
+      "key": "web",
+      "name": "Web"
+    }
+  ],
+  "recommended": [
+    "Basic.Exposure",
+    "Basic.Contrast",
+    "Basic.Highlights",
+    "Basic.Shadows",
+    "Basic.Whites",
+    "Basic.Blacks",
+    "Basic.Temperature",
+    "Basic.Tint",
+    "Settings.Reset Develop Settings"
+  ]
+}

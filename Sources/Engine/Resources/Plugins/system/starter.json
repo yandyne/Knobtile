@@ -1,0 +1,273 @@
+{
+ "panels": [
+  {
+   "items": [
+    {
+     "fn": "Lightroom Classic",
+     "label": "Lightroom Classic",
+     "open": "com.adobe.LightroomClassicCC7"
+    },
+    {
+     "fn": "Photoshop",
+     "label": "Photoshop",
+     "open": "com.adobe.Photoshop"
+    },
+    {
+     "fn": "DaVinci Resolve",
+     "label": "DaVinci Resolve",
+     "open": "com.blackmagic-design.DaVinciResolve"
+    },
+    {
+     "fn": "Capture One",
+     "label": "Capture One",
+     "open": "com.captureone.captureone16"
+    }
+   ],
+   "name": "Apps"
+  }
+ ],
+ "profiles": [
+  {
+   "app": "",
+   "assignments": {
+    "v:0B170001": {
+     "app": "",
+     "preset": "",
+     "settings": {
+      "name": "Scroll",
+      "tiltMode": 1,
+      "tiltSensitivity": 3,
+      "tiltX": {
+       "scroll": "horizontal",
+       "step": 20
+      },
+      "tiltY": {
+       "scroll": "vertical",
+       "step": -20
+      },
+      "turn": {
+       "scroll": "vertical",
+       "step": 20
+      },
+      "turnSensitivity": 9
+     }
+    },
+    "v:B0770001::button1": {
+     "app": "",
+     "preset": "",
+     "settings": {
+      "doublePress": {
+       "input": "audio_next"
+      },
+      "name": "Play ↔ pause · double press for next track",
+      "press": {
+       "input": "audio_play"
+      }
+     }
+    },
+    "v:B0770001::button2": {
+     "app": "",
+     "preset": "",
+     "settings": {
+      "name": "Screenshot · hold for the capture tool",
+      "press": {
+       "key": "4",
+       "modifiers": [
+        "command",
+        "shift"
+       ]
+      },
+      "pressAndHold": {
+       "key": "5",
+       "modifiers": [
+        "command",
+        "shift"
+       ]
+      }
+     }
+    },
+    "v:B0770001::button3": {
+     "app": "",
+     "preset": "",
+     "settings": {
+      "name": "Spotlight · hold for the Apps list",
+      "press": {
+       "key": "space",
+       "modifiers": [
+        "command"
+       ]
+      },
+      "pressAndHold": {
+       "panel": "list:Apps"
+      }
+     }
+    },
+    "v:D1A10001::dial1": {
+     "app": "",
+     "preset": "",
+     "settings": {
+      "deco": "volume",
+      "name": "Volume · press to mute",
+      "press": {
+       "input": "audio_mute"
+      },
+      "turn": {
+       "input": "system.volume",
+       "step": 2
+      }
+     }
+    },
+    "v:D1A10001::dial2": {
+     "app": "",
+     "preset": "",
+     "settings": {
+      "name": "Display brightness",
+      "sensitivity": 5,
+      "turn": {
+       "input": "system.brightness",
+       "step": 1
+      }
+     }
+    },
+    "v:D1A10001::dial3": {
+     "app": "",
+     "preset": "",
+     "settings": {
+      "leftTurn": {
+       "key": "-",
+       "modifiers": [
+        "command"
+       ]
+      },
+      "name": "Zoom out ↔ in · press for actual size",
+      "press": {
+       "key": "0",
+       "modifiers": [
+        "command"
+       ]
+      },
+      "rightTurn": {
+       "key": "=",
+       "modifiers": [
+        "command"
+       ]
+      },
+      "sensitivity": 5
+     }
+    },
+    "v:D1A10002::dial1": {
+     "app": "",
+     "preset": "",
+     "settings": {
+      "leftTurn": {
+       "key": "z",
+       "modifiers": [
+        "command"
+       ]
+      },
+      "name": "Undo ↔ redo",
+      "rightTurn": {
+       "key": "z",
+       "modifiers": [
+        "command",
+        "shift"
+       ]
+      },
+      "sensitivity": 4
+     }
+    },
+    "v:D1A10002::dial2": {
+     "app": "",
+     "preset": "",
+     "settings": {
+      "leftTurn": {
+       "key": "tab",
+       "modifiers": [
+        "control",
+        "shift"
+       ]
+      },
+      "name": "Switch tabs",
+      "rightTurn": {
+       "key": "tab",
+       "modifiers": [
+        "control"
+       ]
+      },
+      "sensitivity": 4
+     }
+    },
+    "v:D1A10002::dial3": {
+     "app": "",
+     "preset": "",
+     "settings": {
+      "leftTurn": {
+       "key": "left",
+       "modifiers": [
+        "control"
+       ]
+      },
+      "name": "Switch desktops · press for Mission Control",
+      "press": {
+       "key": "up",
+       "modifiers": [
+        "control"
+       ]
+      },
+      "rightTurn": {
+       "key": "right",
+       "modifiers": [
+        "control"
+       ]
+      },
+      "sensitivity": 3
+     }
+    }
+   },
+   "id": "5a17e7000000000000001",
+   "lastActivated": 999,
+   "layout": {
+    "modules": [
+     {
+      "r": 0,
+      "t": 25,
+      "u": "?-L6z",
+      "x": 0,
+      "y": 0
+     },
+     {
+      "r": 1,
+      "t": 8,
+      "u": "v:B0770001",
+      "x": 2,
+      "y": 0
+     },
+     {
+      "r": 2,
+      "t": 24,
+      "u": "v:0B170001",
+      "x": 2,
+      "y": 1
+     },
+     {
+      "r": 3,
+      "t": 9,
+      "u": "v:D1A10001",
+      "x": 0,
+      "y": 1
+     },
+     {
+      "r": 3,
+      "t": 9,
+      "u": "v:D1A10002",
+      "x": 0,
+      "y": 2
+     }
+    ],
+    "v": 2
+   },
+   "tags": [],
+   "title": "Basics"
+  }
+ ]
+}

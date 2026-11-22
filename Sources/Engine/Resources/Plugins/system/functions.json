@@ -1,0 +1,68 @@
+{
+"inputs": [
+{"name": "system.volume", "label": "Sound.Volume", "step": 1, "range": [0, 100]},
+{"name": "system.brightness", "label": "Display.Brightness", "step": 1, "range": [0, 100]},
+{"name": "scroll_vertical", "label": "Scroll.Vertical", "step": 1},
+{"name": "scroll_horizontal", "label": "Scroll.Horizontal", "step": 1},
+{"name": "audio_play", "label": "Media.Play / Pause"},
+{"name": "audio_stop", "label": "Media.Stop"},
+{"name": "audio_prev", "label": "Media.Previous"},
+{"name": "audio_next", "label": "Media.Next"},
+{"name": "audio_mute", "label": "Sound.Mute"},
+{"name": "audio_vol_up", "label": "Sound.Volume Up"},
+{"name": "audio_vol_down", "label": "Sound.Volume Down"},
+{"name": "brightness_up", "label": "Display.Brightness Up"},
+{"name": "brightness_down", "label": "Display.Brightness Down"}
+],
+"presets": {
+"button": [
+{"name": "audio_play", "label": "Media.Play / Pause", "press": {"input": "audio_play"}},
+{"name": "audio_stop", "label": "Media.Stop", "press": {"input": "audio_stop"}},
+{"name": "audio_prev", "label": "Media.Previous", "press": {"input": "audio_prev"}},
+{"name": "audio_next", "label": "Media.Next", "press": {"input": "audio_next"}},
+{"name": "audio_mute", "label": "Sound.Mute", "press": {"input": "audio_mute"}},
+{"name": "audio_vol_up", "label": "Sound.Volume Up", "press": {"input": "audio_vol_up"}},
+{"name": "audio_vol_down", "label": "Sound.Volume Down", "press": {"input": "audio_vol_down"}},
+{"name": "brightness_up", "label": "Display.Brightness Up", "press": {"input": "brightness_up"}},
+{"name": "brightness_down", "label": "Display.Brightness Down", "press": {"input": "brightness_down"}},
+{"name": "profiles.next", "label": "Profile.Next", "press": {"dispatch": {"type": "NEXT_PROFILE"}}, "pressAndHold": {"ui": {"type": "SHOW_LAYOUT_PREVIEW"}}, "pressUp": {"ui": {"type": "HIDE_LAYOUT_PREVIEW"}}},
+{"name": "profiles.previous", "label": "Profile.Previous", "press": {"dispatch": {"type": "PREVIOUS_PROFILE"}}, "pressAndHold": {"ui": {"type": "SHOW_LAYOUT_PREVIEW"}}, "pressUp": {"ui": {"type": "HIDE_LAYOUT_PREVIEW"}}},
+{"name": "screens.next", "label": "Page.Next", "press": {"dispatch": {"type": "NEXT_SCREEN"}}},
+{"name": "screens.previous", "label": "Page.Previous", "press": {"dispatch": {"type": "PREVIOUS_SCREEN"}}},
+{"name": "profiles.preview", "label": "Profile.Show Knobtile While Held", "pressDown": {"ui": {"type": "SHOW_LAYOUT_PREVIEW"}}, "pressUp": {"ui": {"type": "HIDE_LAYOUT_PREVIEW"}}},
+{"name": "system.volume_increment", "label": "Sound.Volume Step Up", "press": ["system.volume", "increment"]},
+{"name": "system.volume_decrement", "label": "Sound.Volume Step Down", "press": ["system.volume", "decrement"]},
+{"name": "system.brightness_increment", "label": "Display.Brightness Step Up", "press": ["system.brightness", "increment"]},
+{"name": "system.brightness_decrement", "label": "Display.Brightness Step Down", "press": ["system.brightness", "decrement"]},
+{"name": "scroll_vertical_increment", "label": "Scroll.Vertical Step Up", "press": ["scroll_vertical", "increment"]},
+{"name": "scroll_vertical_decrement", "label": "Scroll.Vertical Step Down", "press": ["scroll_vertical", "decrement"]},
+{"name": "scroll_horizontal_increment", "label": "Scroll.Horizontal Step Up", "press": ["scroll_horizontal", "increment"]},
+{"name": "scroll_horizontal_decrement", "label": "Scroll.Horizontal Step Down", "press": ["scroll_horizontal", "decrement"]},
+{"name": "click.left", "label": "Mouse.Left Click", "press": {"click": "left"}},
+{"name": "double.click.left", "label": "Mouse.Left Double Click", "press": {"click": "left", "double": true}},
+{"name": "click.middle", "label": "Mouse.Middle Click", "press": {"click": "middle"}},
+{"name": "double.click.middle", "label": "Mouse.Middle Double Click", "press": {"click": "middle", "double": true}},
+{"name": "click.right", "label": "Mouse.Right Click", "press": {"click": "right"}},
+{"name": "double.click.right", "label": "Mouse.Right Double Click", "press": {"click": "right", "double": true}}
+],
+"dial": [
+{"name": "system.volume", "label": "Sound.Volume", "turn": {"input": "system.volume", "step": 1}, "pressAndTurn": {"input": "system.volume", "step": 10}},
+{"name": "system.brightness", "label": "Display.Brightness", "turn": {"input": "system.brightness", "step": 1}, "pressAndTurn": {"input": "system.brightness", "step": 10}},
+{"name": "scroll_vertical", "label": "Scroll.Vertical", "turn": {"input": "scroll_vertical", "step": 10}, "pressAndTurn": {"input": "scroll_vertical", "step": 50}},
+{"name": "scroll_horizontal", "label": "Scroll.Horizontal", "turn": {"input": "scroll_horizontal", "step": 10}, "pressAndTurn": {"input": "scroll_horizontal", "step": 50}},
+{"name": "volume_using_consumercontrol", "label": "Sound.Volume (keys)", "leftTurn": {"input": "audio_vol_down"}, "rightTurn": {"input": "audio_vol_up"}, "press": {"input": "audio_mute"}, "sensitivity": 7},
+{"name": "brightness_using_consumercontrol", "label": "Display.Brightness (keys)", "leftTurn": {"input": "brightness_down"}, "rightTurn": {"input": "brightness_up"}, "sensitivity": 7},
+{"name": "profiles.cycle", "label": "Profile.Cycle", "leftTurn": {"dispatch": {"type": "PREVIOUS_PROFILE"}}, "rightTurn": {"dispatch": {"type": "NEXT_PROFILE"}}, "pressAndLeftTurn": {"dispatch": {"type": "PREVIOUS_PROFILE"}}, "pressAndRightTurn": {"dispatch": {"type": "NEXT_PROFILE"}}, "pressDown": {"ui": {"type": "SHOW_LAYOUT_PREVIEW"}}, "pressUp": {"ui": {"type": "HIDE_LAYOUT_PREVIEW"}}, "sensitivity": 5},
+{"name": "screens.cycle", "label": "Page.Cycle", "leftTurn": {"dispatch": {"type": "PREVIOUS_SCREEN"}}, "rightTurn": {"dispatch": {"type": "NEXT_SCREEN"}}, "pressAndLeftTurn": {"dispatch": {"type": "PREVIOUS_SCREEN"}}, "pressAndRightTurn": {"dispatch": {"type": "NEXT_SCREEN"}}, "sensitivity": 5}
+],
+"slider": [
+{"name": "system.volume", "label": "Sound.Volume", "pose": {"input": "system.volume", "range": [0, 100]}},
+{"name": "system.brightness", "label": "Display.Brightness", "pose": {"input": "system.brightness", "range": [0, 100]}}
+],
+"orbiter": [
+{"name": "vScroll", "label": "Scroll.Tilt, Turn Vertical", "tiltMode": 1, "tiltSensitivity": 3, "tiltX": {"input": "scroll_horizontal", "step": 20}, "tiltY": {"input": "scroll_vertical", "step": 20, "invert": true}, "turn": {"input": "scroll_vertical", "step": 20}, "turnSensitivity": 9},
+{"name": "hScroll", "label": "Scroll.Tilt, Turn Horizontal", "tiltMode": 1, "tiltSensitivity": 3, "tiltX": {"input": "scroll_horizontal", "step": 20}, "tiltY": {"input": "scroll_vertical", "step": 20, "invert": true}, "turn": {"input": "scroll_horizontal", "step": 20}, "turnSensitivity": 9},
+{"name": "volume_using_consumercontrol", "label": "Sound.Volume (keys)", "leftTurn": {"input": "audio_vol_down"}, "rightTurn": {"input": "audio_vol_up"}, "turnSensitivity": 7}
+]
+}
+}
