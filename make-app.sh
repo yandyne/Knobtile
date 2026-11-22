@@ -30,13 +30,18 @@ cat > "$APP/Contents/Info.plist" <<PLIST
 <key>LSUIElement</key><false/>
 <key>LSMinimumSystemVersion</key><string>14.0</string>
 <key>NSHighResolutionCapable</key><true/>
-<key>NSAppleEventsUsageDescription</key><string>Knobtile controls Capture One with AppleScript when a Capture One profile is in use.</string>
+<key>NSAppleEventsUsageDescription</key><string>A Knobtile plugin controls this app with AppleScript.</string>
 </dict></plist>
 PLIST
 # A stable identity keeps the Accessibility grant across rebuilds (ad-hoc signatures change every build and TCC forgets the app).
 ID=$(security find-identity -v -p codesigning 2>/dev/null | grep -o '"Apple Development: [^"]*"' | head -1 | tr -d '"')
 # "./make-app.sh dist": the build to hand out. Ad hoc, because a personal certificate would put its owner's Apple ID into every copy.
 [ "$1" = dist ] && ID=-
+# The debug symbols name every source file by its full path on the build machine: a build to hand out goes without them.
+if [ "$1" = dist ]; then
+  strip -S -x "$APP/Contents/MacOS/Knobtile" 2>/dev/null
+  if LC_ALL=C grep -aq "$(pwd)" "$APP/Contents/MacOS/Knobtile"; then echo "DIST FAILED: the binary still names this folder"; exit 1; fi
+fi
 codesign --force --sign "${ID:--}" "$APP" >/dev/null 2>&1 || codesign --force --sign - "$APP" >/dev/null 2>&1 || true
 if [ "$1" = dist ]; then
   V=$(/usr/libexec/PlistBuddy -c 'Print CFBundleShortVersionString' "$APP/Contents/Info.plist")
