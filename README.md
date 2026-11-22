@@ -91,6 +91,35 @@ Tested with Lightroom Classic 16.0.1.
 
 Hardware tested: Core with a 3-button module, an Orbiter and two 3-dial modules. Single buttons, dials and sliders, and the 3-slider module are implemented but less tested.
 
+## How this was built
+
+Knobtile was built by one person working with AI models (Claude Code) over 9 working days in November 2026.
+The models wrote the code. The author decided what to build, tested every change on the real hardware, and sent it back when it was wrong.
+
+| | The author | The models |
+|---|---|---|
+| Did | design, decisions, testing on the hardware | code, tests, documents |
+| Volume | 531 messages, 30+ photos and screenshots | 3,909 responses, 3,836 commands and file operations |
+| Time | about 32 hours | about 39 hours |
+
+What the author's 531 messages were:
+
+| Kind | Messages | Share |
+|---|---|---|
+| Test results and bug reports | 174 | 33% |
+| Questions and requests for proposals | 130 | 24% |
+| Requirements and design | 111 | 21% |
+| Decisions | 78 | 15% |
+| Housekeeping | 38 | 7% |
+
+| Model | Working time | Responses |
+|---|---|---|
+| Claude Fable 5.1 | 18.7 h | 1,916 |
+| Claude Fable 5.2 | 15.6 h | 1,460 |
+| Claude Opus 5.5 | 4.5 h | 533 |
+
+<sub>Counted from the session logs up to 22 Nov 2026. Times are estimates: for the models, gaps of up to 5 minutes between two events; for the author, the time from a model's answer to the next message, up to 30 minutes. The kinds were assigned by reading each message; some fit more than one.</sub>
+
 ## License
 
 MIT, see [LICENSE](LICENSE). "Monogram" and "Creative Console" are names of their owner's products, used here only to say what hardware this works with.
