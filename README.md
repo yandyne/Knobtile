@@ -126,6 +126,11 @@ What the author's 531 messages were:
 
 <sub>Counted from the session logs up to 22 Nov 2026. Times are estimates: for the models, gaps of up to 5 minutes between two events; for the author, the time from a model's answer to the next message, up to 30 minutes. The kinds were assigned by reading each message; some fit more than one.</sub>
 
+## Contributing
+
+This is a personal project. Pull requests are not accepted and issues are turned off.
+You are welcome to fork it and change it for yourself under the license below; to add support for another app, write a plugin, which needs no change to Knobtile.
+
 ## License
 
 MIT, see [LICENSE](LICENSE). "Monogram" and "Creative Console" are names of their owner's products, used here only to say what hardware this works with.
