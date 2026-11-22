@@ -38,6 +38,8 @@ With a certificate, macOS keeps the Accessibility permission across rebuilds; wi
 
 ### A downloaded build
 
+A release has two files: `Knobtile-<version>.zip` (the app) and `Knobtile-Lightroom-<version>.zip` (the `Plugins/lightroom` and `LightroomPlugin/Knobtile.lrplugin` folders, for those who do not download the source).
+
 Downloaded builds are not notarized, so macOS refuses to open them the first time:
 
 1. Unzip, move Knobtile to Applications, and open it. macOS says it was "Not Opened": click **Done** (not Move to Trash).
