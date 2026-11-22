@@ -3,6 +3,8 @@
 An unofficial, native macOS app for the Monogram Creative Console (Core, buttons, dials, sliders, Orbiter).
 It talks to the hardware directly, keeps your profiles, and lets **plugins** add functions for any app.
 
+![The Develop profile for Lightroom Classic: a Core, three buttons, two dial modules and an Orbiter, each control with its function](Docs/images/main.png)
+
 Knobtile is not made by, affiliated with, or supported by Monogram. It contains no Monogram code or files.
 
 - macOS 14 or later, Apple silicon or Intel
@@ -15,6 +17,8 @@ Knobtile is not made by, affiliated with, or supported by Monogram. It contains 
 - Buttons, dials, sliders and the Orbiter run shortcuts, macros, scrolling, media keys, volume and brightness, or a plugin's functions
 - An on-screen map of the current profile, and lists you can open from a button
 - Plugins: a folder with a few JSON files, and optionally a small helper program in any language. See [Docs/plugin-spec-v1.md](Docs/plugin-spec-v1.md)
+
+![A dial module selected: its gestures on the left are wired to Lightroom functions on the right, with three stacked layers for one physical module](Docs/images/wiring.png)
 
 ## Install
 
